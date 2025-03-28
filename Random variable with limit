@@ -1,0 +1,14 @@
+import random
+y = int(input("Number of Guess : "))
+n = random.randint(1, 100)
+while (y>=1):
+    x = int(input("Guess The Number: "))
+    if x < n:
+     print("Oh! Too Low")
+    elif x > n:
+     print("Oh! Too High")
+    else:
+     print("Wow! You Got The Number")
+    y=y-1
+if(y==0):
+    print("shit! You lost The Game")
